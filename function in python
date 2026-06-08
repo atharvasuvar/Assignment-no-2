@@ -1,0 +1,157 @@
+1. Write a function to check whether a number is positive, negative, or zero.
+
+def check_number(n):
+    if n > 0:
+        print("Positive Number")
+    elif n < 0:
+        print("Negative Number")
+    else:
+        print("Zero")
+num = int(input("Enter a number: "))
+check_number(num)
+
+2. Write a function to check whether a number is even or odd.
+
+def even_odd(n):
+    if n % 2 == 0:
+        print("Even Number")
+    else:
+        print("Odd Number")
+num = int(input("Enter a number: "))
+even_odd(num)
+
+3. Write a function that accepts two numbers and returns the greater number.
+
+def greater(a, b):
+    if a > b:
+        print("Greater Number =", a)
+    else:
+        print("Greater Number =", b)
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+greater(a, b)
+
+4. Write a function to check whether a person is eligible to vote (age >= 18).
+
+def check_vote(age):
+    if age >= 18:
+        print("Eligible to Vote")
+    else:
+        print("Not Eligible to Vote")
+age = int(input("Enter your age: "))
+check_vote(age)
+
+5. Write a function to check whether a number is divisible by 5.
+
+def divisible_by_5(n):
+    if n % 5 == 0:
+        print("Number is divisible by 5")
+    else:
+        print("Number is not divisible by 5")
+num = int(input("Enter a number: "))
+divisible_by_5(num)
+
+6. Write a function to check whether a given year is a leap year or not.
+
+def leap_year(year):
+    if year % 4 == 0:
+        print("Leap Year")
+    else:
+        print("Not a Leap Year")
+year = int(input("Enter a year: "))
+leap_year(year)
+
+7. Write a function to check whether a character is a vowel or a consonant.
+
+def vowel_consonant(ch):
+    if ch == 'a' or ch == 'e' or ch == 'i' or ch == 'o' or ch == 'u':
+        print("Vowel")
+    else:
+        print("Consonant")
+char = input("Enter a character: ")
+vowel_consonant(char.lower())
+
+8. Write a function to find the largest among three numbers.
+
+def largest(a, b, c):
+    if a > b and a > c:
+        print("Largest Number =", a)
+    elif b > c:
+        print("Largest Number =", b)
+    else:
+        print("Largest Number =", c)
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+c = int(input("Enter third number: "))
+largest(a, b, c)
+
+9. Write a function to calculate the sum of numbers from 1 to 100.
+
+def sum_numbers():
+    total = 0
+    for i in range(1, 101):
+        total = total + i
+    print("Sum =", total)
+sum_numbers()
+
+10. Write a function that prints the multiplication table of a given number.
+
+def table(n):
+    for i in range(1, 11):
+        print(n, "x", i, "=", n * i)
+num = int(input("Enter a number: "))
+table(num)
+
+11. Write a function to calculate and return the square of a number.
+
+def square(n):
+    print("Square =", n * n)
+num = int(input("Enter a number: "))
+square(num)
+
+12. Write a function to calculate the factorial of a number using a loop.
+
+def factorial(n):
+    fact = 1
+    for i in range(1, n + 1):
+        fact = fact * i
+    print("Factorial =", fact)
+num = int(input("Enter a number: "))
+factorial(num)
+
+13. Write a function to check whether a number is prime.
+
+def prime(n):
+    count = 0
+    for i in range(1, n + 1):
+        if n % i == 0:
+            count += 1
+    if count == 2:
+        print("Prime Number")
+    else:
+        print("Not a Prime Number")
+num = int(input("Enter a number: "))
+prime(num)
+
+14. Write a function to calculate the sum of digits of a number.
+
+def sum_digits(n):
+    total = 0
+    while n > 0:
+        digit = n % 10
+        total = total + digit
+        n = n // 10
+    print("Sum of Digits =", total)
+num = int(input("Enter a number: "))
+sum_digits(num)
+
+
+15. Write a function that accepts a number n and returns the sum of all numbers from 1 to n.
+
+def sum_n(n):
+    total = 0
+    for i in range(1, n + 1):
+        total = total + i
+    print("Sum =", total)
+num = int(input("Enter a number: "))
+sum_n(num)
